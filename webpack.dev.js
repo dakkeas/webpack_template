@@ -1,6 +1,8 @@
 const path = require('path');
 const htmlwebpackplugin = require('html-webpack-plugin');
 const nodepolyfillplugin = require("node-polyfill-webpack-plugin")
+
+
 module.exports = {
     mode: "development",
     entry: {
@@ -18,7 +20,7 @@ module.exports = {
         //  will generate its own index.html file, even though we already have one in 
         // the dist/ folder.this means that it will replace our index.html file with a newly generated one.
         new htmlwebpackplugin({
-            title: 'siomai king san miguel',
+            title: '',
             filename: "index.html",
             chucks: ['index'],
         }),
